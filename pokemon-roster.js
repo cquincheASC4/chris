@@ -8,12 +8,14 @@ var pokemonRoster = [
 ];
 
 function specificPokemonStats() {
-    for(var i = 0; i < pokemonRoster.length ; i++)
-        console.log(pokemonRoster[0])
-        console.log(pokemonRoster[1])
-        console.log(pokemonRoster[2])
-        console.log(pokemonRoster[3])
-        console.log(pokemonRoster[4])
-        console.log(pokemonRoster[5])
+    for(var i = 0; i < pokemonRoster.length ; i++) {
+        var line = "Name: " + pokemonRoster[i][0];
+        line = line + " >Type: " + pokemonRoster[i][1];
+        line = line + " >HP: " + pokemonRoster[i][2];
+        line = line + " >Attack: " + pokemonRoster[i][3];
+        line = line + " >Defense: " + pokemonRoster[i][4];
+        line = line + " >Lengend: " + pokemonRoster[i][5];
+        console.log(line);
+    }
 }
 specificPokemonStats()

@@ -12,23 +12,34 @@ function setup() {
     intro = "test your typing"
     intro_x = windowWidth/3
     intro_y = windowHeight/3
-    text(intro, intro_x, intro_y)
-
-    textSize(35);
-    text(sample, 250,350)
-
-    textSize(30)
-    inp = createInput(' ', "text");
-    inp.position(400, intro_y+140);
-        inp.size(sample.length*20,90);
-}
-var x = 0
-var words = sample[1]
-function keyTyped() {
     
-    if (keyCode == ENTER) {
-        if(inp.value() === words) {
-            alert("you win")
+    textSize(30);
+    inp = createInput('', "text");
+    inp.position(400, intro_y+140);
+    inp.size(sample.length*20,90);
+}
+
+var x = 0;
+var points = 0;
+
+
+function draw() {
+    textSize(35);
+    text(sample, 400, 50);
+    text(intro, intro_x, intro_y);
+    text("Points: " + points, 200, 50);
+}
+
+function keyTyped() {
+    if (keyCode === ENTER) {
+        console.log(inp.value());
+        if(inp.value() === sample[x]) {
+            background('white');
+            points = points + 10;
+            x++;
+            textSize(25);
+            
         }
+        
   } 
 }

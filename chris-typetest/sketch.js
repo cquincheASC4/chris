@@ -7,13 +7,14 @@ var intro_y
 function setup() {
     createCanvas(windowWidth, windowHeight);
 
-    background('white');
+    background('purple');
     textSize(40);
     intro = "test your typing"
     intro_x = windowWidth/3
     intro_y = windowHeight/3
     
     textSize(30);
+    
     inp = createInput('', "text");
     inp.position(400, intro_y+140);
     inp.size(sample.length*20,90);
@@ -34,7 +35,7 @@ function keyTyped() {
     if (keyCode === ENTER) {
         console.log(inp.value());
         if(inp.value() === sample[x]) {
-            background('white');
+            background('purple');
             points = points + 10;
             x++;
             textSize(25);

@@ -1,0 +1,35 @@
+body{
+    margin: 200px;
+    color: orange;
+    background: url(http://wallpapercave.com/wp/KMwS0R5.png);
+    background-size: cover;
+    background-position: center;
+    color:orange
+}
+h1{
+    color:red;
+    font-size: 50px;
+    font-family:Verdana;
+}
+img{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+    border: 10px solid teal;
+}
+
+p{
+    font-size: 30px;
+}
+
+#bio{
+    zbackground-color: black;
+    color: white;
+    font-family: Arial;
+}
+.content{
+    font-family:Impact;
+    background-color:grey;
+    font-size: 20px;
+}

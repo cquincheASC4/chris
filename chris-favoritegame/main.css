@@ -1,0 +1,30 @@
+.body {
+    background: black;
+}
+.topheader {
+    background: url("https://wavepublication.files.wordpress.com/2014/03/crashbandicoot_hero.jpg");
+    background-size: cover;
+    background-position: center;
+    color: red;
+    font-size: 200px
+}
+
+#origin {
+    background: url("https://pbs.twimg.com/media/DEJdUhQXYAAM7PD.jpg");
+    min-width: 200;
+    min-height: 200;
+    background-size: cover;
+    background-position: center;
+    text-align: right;
+}
+h2 {
+        color: orangered;
+        font-family: Impact;
+        font-size: 75px
+
+    }
+p2 {
+    color: red;
+    font-family: Cambria;
+    font-size: 17px;
+}

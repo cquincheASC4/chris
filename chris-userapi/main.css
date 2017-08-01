@@ -1,0 +1,16 @@
+
+body {
+    background: tan;
+    font-family: Courier;
+    font-size: 30px;
+    color: teal;
+    text-align: center;
+}
+
+header {
+    background: lightgreen;
+    font-size: 34px;
+    color: red;
+    font-family: Cambria;
+    text-align: center;
+}

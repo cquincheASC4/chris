@@ -1,0 +1,22 @@
+
+body {
+    background: thistle;
+    font-family: Impact;
+    font-size: 30px;
+    color: teal;
+    text-align: center;
+}
+
+header {
+    background: lightgreen;
+    font-size: 34px;
+    color: red;
+    font-family: Cambria;
+    text-align: center;
+}
+
+#flag {
+    text-align: center;
+    max-width: 300px;
+    max-height: 400px;
+}

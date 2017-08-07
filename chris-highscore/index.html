@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src ="main.js"></script>
+    <link href="style.css" rel="stylesheet"></link>
+
+    <title>Rock Paper Scissors</title>
+
+    <!--Go to https://console.firebase.google.com-->
+    <!--Sign in and add a project "fireMessage"-->
+    <!--PASTE SNIPPET HERE-->
+    
+<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCVzK8Qq7dhMQ_BHNBrNXV04nxzFPNWE3Y",
+    authDomain: "firemessage-1b995.firebaseapp.com",
+    databaseURL: "https://firemessage-1b995.firebaseio.com",
+    projectId: "firemessage-1b995",
+    storageBucket: "",
+    messagingSenderId: "409836151707"
+  };
+  firebase.initializeApp(config);
+</script>
+
+
+
+
+    <!--jquery-->
+    
+
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Alike+Angular|Asul|Eczar" rel="stylesheet">
+
+
+</head>
+<body>
+
+    <!--Add your name-->
+    <h1 id="gameTitle">RPS GAME</h1>
+
+    <!--Will be populated with game results-->
+    <div class="allResults">
+        
+    </div>
+    
+    <!--For user to input messages-->
+    <div class="userContainer">
+        <form>
+            <div class="textContainer">
+                <div>
+                    <p>Your name:</p><input id="name" type="text">
+                </div>
+                <div>
+                   <p>Your choice:</p>
+                   <input type="button" class="rock" value="rock">
+                   <input type="button" class:"paper"  value="paper">
+                   <input type="button" class:"scissors"  value="scissors">
+                </div>
+            </div>
+            </div>
+        <div class="game-message-placement">
+            <div id="game-message">
+
+            </div>
+        </div>
+    </div>
+</body>

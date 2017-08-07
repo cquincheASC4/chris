@@ -1,0 +1,9 @@
+body {
+    background: grey
+}
+
+#gameTitle {
+    color: red;
+    font-family: Impact;
+    font-size: 40px;
+}

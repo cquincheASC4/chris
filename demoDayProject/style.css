@@ -1,0 +1,39 @@
+.brand {
+    text-align: center;
+    font-family: Courier;
+    font-size: 50px;
+    color:whitesmoke;
+}
+.userData {
+    text-align: right;
+    font-size: 12px;
+    color: whitesmoke;
+}
+.mainContainer {
+    text-align: right;
+    font-size: 12px;
+    color: whitesmoke
+}
+
+body {
+    background: url("http://eskipaper.com/images/scenery-background-3.jpg");
+    background-size: cover;
+
+}
+
+#continueButton {
+    text-align: center;
+    margin: 0 auto;
+    
+}
+button {
+    width: 400px;
+    height: 200px;
+    padding: 15px 32px;
+    color: Purple;
+    font-size: 43px;
+}
+.signOut {
+    color:red;
+    font-size: 15px;
+}

@@ -43,6 +43,7 @@ hr {
     text-transform: uppercase;
     font-weight: 900;
     letter-spacing: 2px;
+    color:orange;
 }
 
 .navbar-nav {
@@ -52,8 +53,8 @@ hr {
 }
 
 .img-full {
-    width: 400px;
-    height: auto;
+    max-width: 400px;
+    max-height: 350px;
     margin: auto ;
     display: block;
 

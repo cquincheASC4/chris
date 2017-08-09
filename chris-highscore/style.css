@@ -1,9 +1,33 @@
 body {
-    background: grey
+    background:pink;
+    text-align: center;
 }
 
 #gameTitle {
     color: red;
     font-family: Impact;
-    font-size: 40px;
+    font-size: 80px;
+}
+
+#results {
+    color:lime;
+    font-family: impact;
+    font-size:60px;
+
+}
+#thing {
+    max-width: 400px;
+    max-height: 500px;
+
+}
+.textContainer {
+    color: blue;
+    font-size: 28px;
+    font-family: Impact;
+}
+
+#leaderBoard {
+    color: purple;
+    font-size: 25px;
+    font-family: impact;
 }

@@ -22,6 +22,7 @@ function onSignOut() {
 }
 
 
+
 var xcors; 
 var ycors;
 var rows = [0, 1, 2, 3, 4];
@@ -33,6 +34,7 @@ function setup() {
     ycors = [[0, windowHeight/4],[windowHeight/4, windowHeight/2], [windowHeight/2, windowHeight*3/4], [windowHeight*3/4, windowHeight]];
     background('white');
     fill('white');
+    
     for (var i = 0; i < 4; i++) {
         for(var x = 0; x < 4; x++) {
             rect(windowWidth*i/4, windowHeight*x/4, windowWidth/4, windowHeight/4);
@@ -56,10 +58,13 @@ function mouseClicked() {
         } else {
             for(var x = 0; x < 4; x++) {
                 for(var y = 0; y < 4; y++) {
-                    fill('red');
+                    
+                    fill('red');       
                     if(mouseX > xcors[x][0] && mouseX < xcors[x][1] && mouseY > ycors[y][0] && mouseY < ycors[y][1]) {
                         rect(xcors[x][0], ycors[y][0], windowWidth/4, windowHeight/4);
+                        
                         counter = counter + 1;
+                        
                     }
                 }
                 

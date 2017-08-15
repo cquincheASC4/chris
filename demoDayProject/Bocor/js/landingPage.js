@@ -4,7 +4,7 @@ function onSignIn(googleUser) {
     var profile = googleUser.getBasicProfile();
     //change userName text, img source, & email text based on profile
     $(".userName").text(profile.getName());
-    
+    //$("img").attr("src", profile.getImageUrl());
     $(".email").text(profile.getEmail());
 }
 
@@ -16,9 +16,16 @@ function onSignOut() {
         console.log('User signed out.')
         //setting back to default
         $(".userName").text("USER_NAME");
-
+        //$(".profileImg").attr("src", "assets/placeholder.png");
         $(".email").text("example@example.com");
     });
 }
 
 
+// //Set database object
+var database = firebase.database().ref()
+
+database.on('child_added', function(rowData) {
+    console.log(rowData.val())
+    $('#stories').append("<p>" + rowData.val().STORY  + "</p>");
+})

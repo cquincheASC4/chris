@@ -7,32 +7,34 @@
 <head>
 <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
 <script>
- // Initialize Firebase
- var config = {
-   apiKey: "AIzaSyBgrBRuALHKPY416RgCUY-3fOJZ-xHNQH8",
-   authDomain: "the-writers-playground.firebaseapp.com",
-   databaseURL: "https://the-writers-playground.firebaseio.com",
-   projectId: "the-writers-playground",
-   storageBucket: "the-writers-playground.appspot.com",
-   messagingSenderId: "478493741565"
- };
- firebase.initializeApp(config);
- </script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDId2w9hc3mpTgt9imRawtOgMd-LH72DLY",
+    authDomain: "the-writers-playground-e90e7.firebaseapp.com",
+    databaseURL: "https://the-writers-playground-e90e7.firebaseio.com",
+    projectId: "the-writers-playground-e90e7",
+    storageBucket: "",
+    messagingSenderId: "789029819712"
+  };
+  firebase.initializeApp(config);
+</script>
 
 
 
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js'></script>
-     <script src='js/gameCode.js'></script>
-     <link href='css/writingGame.css' rel='stylesheet'></link>
+     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js'></script>
+     <script src='words.js'></script>
+     <link href='mainpage.css' rel='stylesheet'></link>
+
+
 </head>
 
 
-<body>
+<body> 
 
-   <div class='word'>
+    <div class='word'>
     </div>
 
-   <p1> Write Your Own Story With The Given Noun </p1> <form><input type=button value="Get another Word" onClick="window.location.reload()"></form>
+    <p1> Write Your Own Story With The Given Noun </p1> <form><input type=button value="Get another Word" onClick="window.location.reload()"></form>
 <div class='timer'>
     </div>
  <div class= 'story'>
@@ -40,10 +42,10 @@
     <textarea rows="5" cols="20" input id="story" type="text">
     </textarea>
     </form>  
-</div>
-            
+</div> 
+             
 
-         <!--<p>Your Story:</p><input id="story" type="text">-->
+          <!--<p>Your Story:</p><input id="story" type="text">-->
 
 <h1>Timer</h1>
 <div id="clockdiv">
@@ -60,8 +62,8 @@
     <h1> Your story: </h1>;
     </div>
     <div class="GObutton">
-                <input type="reset" onclick="updateDB();" value="UPLOAD YOUR STORY !!">
-            </div>
+        <input type="reset" onclick="updateDB()" value="UPLOAD YOUR STORY !!">
+    </div>
 </body>
 
 
